@@ -18,7 +18,8 @@ def main():
           for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                       return
-                
+
+          player_triangle.update(dt)
           screen.fill("black")
           player_triangle.draw(screen)
           pygame.display.flip()
